@@ -10,16 +10,22 @@ h1{
 h2{
     font-family: "itc-american-typewriter";
     color: #fffefa;
-    font-weight: lighter; 
+    font-weight: 500; 
+    font-size: 36px;
 }
 
 h3{
-
+  font-family: "karla";
+  color: #fffefa;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 p{
     font-family: "karla";
     color: #fffefa;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 /*Hero section*/
@@ -27,6 +33,7 @@ p{
 .hero-parallax{
     background-image: url("images/hero-images.png");
     height: 1000px;
+    margin-top: -70px;
   
     /* parallax scrolling effect */
     background-attachment: fixed;
@@ -37,12 +44,130 @@ p{
 
 #arrow{
     color: #fffefa;
+    width:5%;
+    position: absolute;
+    top: 85%;
+    left: 47.5%; 
 }
 
 /*Om os section*/
 
 .om-os-container {
-    background-color: #133e5e;
-    margin-top: -20px;
-    height: 600px;
+    background: linear-gradient(
+    to right,
+    #133e5e 0%,
+    #12402c 100%);
+    padding-bottom: 3%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.Hvad-er{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 4%;
+  
+}
+
+#myVideo{
+   max-width: 70%;
+   max-height: 70%; 
+}
+
+/*Citat 1 section*/
+
+.parallaxone {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/810_2327-Edit-1.png);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+.tekstboks1{
+  padding-top: 35%;
+  padding-left: 15%;
+}
+
+/*Interview1 section*/
+
+.interview1-container {
+    background: linear-gradient(
+        to right,
+        #133e5e 0%,
+        #12402c 100%);
+        padding-bottom: 3%;
+        margin-top: -30px;
+        height: 600px;
+        display: flex;
+        flex-direction: row-reverse;
+}
+
+.interview-tekst{
+    flex-basis: 50%;
+    padding: 8%;
+}
+
+.Video1{
+    flex-basis: 50%;
+    padding: 10%;
+}
+
+.Video1 .Video{
+    max-width: 130%;
+    max-height: 130%;
+}
+
+#audio-player{
+    padding-top: 5%;
+}
+
+/*Timeline section*/
+
+.parallaxtwo {
+    background-image: url(images/timeline.png);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -24px;
+}
+
+/*Interview2 section*/
+
+.interview2-container {
+    background: linear-gradient(
+        to right,
+        #133e5e 0%,
+        #12402c 100%);
+        padding-bottom: 3%;
+        margin-top: -30px;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+}
+
+/*Citat 1 section*/
+
+.parallaxthree {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/810_2327-Edit-2.png);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+.tekstboks1{
+  padding-top: 35%;
+  padding-left: 15%;
+}
+
+/*Interview3 section*/
