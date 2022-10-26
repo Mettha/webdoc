@@ -1,0 +1,48 @@
+/*Headings and paragraphs*/
+
+h1{
+    font-family: "itc-american-typewriter";
+    font-size: 90px;
+    color: #fffefa;
+    font-weight: lighter;
+}
+
+h2{
+    font-family: "itc-american-typewriter";
+    color: #fffefa;
+    font-weight: lighter; 
+}
+
+h3{
+
+}
+
+p{
+    font-family: "karla";
+    color: #fffefa;
+}
+
+/*Hero section*/
+
+.hero-parallax{
+    background-image: url("images/hero-images.png");
+    height: 1000px;
+  
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#arrow{
+    color: #fffefa;
+}
+
+/*Om os section*/
+
+.om-os-container {
+    background-color: #133e5e;
+    margin-top: -20px;
+    height: 600px;
+}
