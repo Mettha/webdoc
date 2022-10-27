@@ -1,3 +1,4 @@
+// typwriter 
 var ptag = document.getElementById("type");
 
 var i = 0;
@@ -18,4 +19,33 @@ function typeWriter() {
 }
 
 typeWriter()
+
+//afspil video når synlig
+// this function will check whether a tag is visible
+function elFllVsbl(el) {
+    return (
+      el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom < window.innerHeight);
+  }
+
+// eventlistner
+window.addEventListener("scroll", function () {
+    let myVid = document.getElementById("myVideo");
+    if (elFllVsbl(myVid))
+      myVid.play();
+    else
+      myVid.pause();
+  });
+
+//second try eventlistner
+/*
+  var elem = document.getElementById("myVideo");
+   
+
+  window.onscroll = function(){
+   if (elF11Vsbl(elem))
+     elem.play();
+   else
+     elem.pause();
+   }
+  */
 
