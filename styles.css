@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /*Headings and paragraphs*/
 
 h1{
@@ -226,7 +230,7 @@ i:hover {
 }
 
 .kontakt{
-    background-color: black; opacity: ;
+    background: rgba(0,0,0,0.4);
     color: #fffefa;
     width: 400px;
     border-radius: 12px;
@@ -245,8 +249,8 @@ i:hover {
      text-decoration: none;
      color: #fffefa;
      font-family: "karla";
-     
      background-color: #d9aa01;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
      border-radius: 14px;
      font-size: 20px;
      padding: 10px 15px;

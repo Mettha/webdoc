@@ -1,5 +1,4 @@
 // typwriter 
-var ptag = document.getElementById("type");
 
 var i = 0;
 var txt = 'Hvad er dialog på tværs ?';
@@ -18,7 +17,7 @@ function typeWriter() {
   }
 }
 
-typeWriter()
+typeWriter();
 
 //afspil video når synlig
 // this function will check whether a tag is visible
