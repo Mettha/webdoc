@@ -2,7 +2,7 @@
 
 var i = 0;
 var txt = 'Hvad er dialog på tværs ?';
-var speed = 50;
+var speed = 300;
 
 function typeWriter() {
   if (i < txt.length) {
@@ -20,6 +20,18 @@ function typeWriter() {
 typeWriter();
 
 //afspil video når synlig
+var blooper = document.getElementById("myVideo");
+ 
+window.onscroll = function() {
+  if (blooper.getBoundingClientRect().bottom < 250 || blooper.getBoundingClientRect().top > 250)
+  blooper.pause();
+else
+  blooper.play();
+}
+
+
+/*
+//afspil video når synlig
 // this function will check whether a tag is visible
 function elFllVsbl(el) {
     return (
@@ -34,7 +46,7 @@ window.addEventListener("scroll", function () {
     else
       myVid.pause();
   });
-
+*/
 //second try eventlistner
 /*
   var elem = document.getElementById("myVideo");
