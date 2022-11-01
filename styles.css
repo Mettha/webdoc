@@ -32,6 +32,7 @@ p{
     color: #fffefa;
     font-size: 18px;
     line-height: 1.5;
+    padding-bottom: 20px;
 }
 
 /*Hero section*/
@@ -91,7 +92,7 @@ i:hover {
     color: #fffefa;
     font-weight: 500; 
     font-size: 36px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .om-os-container {
@@ -100,7 +101,7 @@ i:hover {
     #133e5e 0%,
     #12402c 100%);
     padding-bottom: 3%;
-    height: 900px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,10 +166,20 @@ i:hover {
     max-height: 120%;
 }
 
-#audio-player{
-    padding-top: 5%;
+#type2{
+    font-family: "itc-american-typewriter";
+    font-size: 16px;
+    padding-top: 3%;
 }
 
+/*Galleri section*/
+
+.galleri{
+    background: linear-gradient(
+        to right,
+        #133e5e 0%,
+        #12402c 100%);
+}
 /*Interview2 section*/
 
 .interview2-container {
