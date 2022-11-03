@@ -181,7 +181,9 @@ a:hover {
 }
 
 #type2{
-    font-family: "itc-american-typewriter";
+    font-family: "karla";
+    font-style: italic;
+    font-weight: bolder;
     font-size: 16px;
     padding-top: 3%;
 }
@@ -197,6 +199,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding-top: 100px;
   
 }
 
