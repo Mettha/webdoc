@@ -1,8 +1,8 @@
-/* Christians typewriter 
+// Christians typewriter 
 
 var messageArray = ["Hvad er dialog på tværs ?"];
 var textposition = 0;
-var speed = 100;
+var speed = 250;
 
 typewriter = () => {
   document.querySelector("#type"). 
@@ -12,11 +12,11 @@ typewriter = () => {
   setTimeout(typewriter, speed); 
   else{
       textposition = 0; 
-      setTimeout(typewriter, 1000);
+      setTimeout(typewriter, speed);
   }
 }
 window.addEventListener("load", typewriter); 
-*/
+
 
 /*
 //Kims Nye typewriter
@@ -39,7 +39,7 @@ var speed = 50;
         typeWriter();
 */
 
-
+/*
 // Mettes typewriter 
 var i = 0;
 var txt = 'Hvad er dialog på tværs ?';
@@ -59,7 +59,7 @@ function typeWriter() {
 }
 
 typeWriter();
-
+*/
 
 //afspil video når synlig
 // this function will check whether a tag is visible
@@ -126,29 +126,30 @@ window.addEventListener("scroll", function () {
 */
 
 // slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
+const slider = document.querySelector('.gallery');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+slider.addEventListener('mousedown', e => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
